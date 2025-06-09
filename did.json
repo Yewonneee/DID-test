@@ -1,3 +1,22 @@
 {
-  "id": "did:web:yewonneee.github.io:DID-test"
+  "@context": "https://www.w3.org/ns/did/v1",
+  "id": "did:web:yewonneee.github.io:DID-test",
+  "verificationMethod": [
+    {
+      "id": "did:web:yewonneee.github.io:DID-test#key-1",
+      "type": "Ed25519VerificationKey2018",
+      "controller": "did:web:yewonneee.github.io:DID-test",
+      "publicKeyBase58": "3PAJ1H3vNHUnzyWx8sQZKt3cHZQ6gTHGhjcmTS31nfiT"
+    }
+  ],
+  "authentication": [
+    "did:web:yewonneee.github.io:DID-test#key-1"
+  ],
+  "service": [
+    {
+      "id": "did:web:yewonneee.github.io:DID-test#messaging",
+      "type": "DIDCommMessaging",
+      "serviceEndpoint": "https://example.com/messages"
+    }
+  ]
 }
